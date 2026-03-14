@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - index.html
+      - Beginner/gh-deployment-workflow/index.html
 
 permissions:
   contents: read
@@ -29,7 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'Beginner/gh-deployment-workflow/'
 
       - name: Deploy to GitHub Pages
         id: deployment
