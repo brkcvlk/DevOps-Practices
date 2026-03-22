@@ -12,3 +12,4 @@ Projects from the [roadmap.sh DevOps learning path](https://roadmap.sh/devops/pr
 - [x] [GitHub Pages Deployment](./Beginner/gh-deployment-workflow/) -> Write a simple GitHub Actions workflow to deploy a static website to GitHub Pages.
 - [x] [Nginx Log Analyser](./Beginner/nginx-log-analyser/) -> Write a simple tool to analyze logs from the command line.
 - [x] [SSH Remote Server Setup](./Beginner/ssh-remote-server-setup/) -> Setup a basic remote linux server and configure it to allow SSH
+- [x] [Static Site Server](./Beginner/static-site-server/) -> Setup a basic linux server and configure it to serve a static site
