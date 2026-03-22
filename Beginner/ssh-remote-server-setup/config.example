@@ -1,0 +1,9 @@
+Host <alias-key1>
+  HostName <server-ip>
+  User <username>
+  IdentityFile ~/.ssh/<private-key1>
+
+Host <alias-key2>
+  HostName <server-ip>
+  User <username>
+  IdentityFile ~/.ssh/<private-key2>
