@@ -33,7 +33,7 @@ Go to repository **Settings -> Pages -> Custom domain**, enter your domain and s
 
 | Type | Name | Content |
 |------|------|---------|
-| A | @ | <server-ip> |
+| A | @ | server-ip |
 | CNAME | www | yourdomain.com |
 
 ### 2. Update Nginx config
