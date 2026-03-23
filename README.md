@@ -16,3 +16,4 @@ Projects from the [roadmap.sh DevOps learning path](https://roadmap.sh/devops/pr
 - [x] [Basic DNS Setup](./Beginner/basic-dns-setup/) -> Purchase a custom domain and set up basic DNS records.
 - [x] [Simple Monitoring Dashboard](./Beginner/simple-monitoring-dashboard/) -> Set up a basic monitoring dashboard using Netdata.
 - [x] [Dummy Systemd Service](./Beginner/dummy-systemd-service/) -> Create a long-running systemd service that logs to a file.
+- [x] [EC2 Instance](./Beginner/ec2-instance/) -> Create an EC2 instance on AWS and connect to it using SSH.
