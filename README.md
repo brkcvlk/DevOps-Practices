@@ -11,6 +11,7 @@ Projects from the [roadmap.sh DevOps learning path](https://roadmap.sh/devops/pr
 - [x] [Basic Dockerfile](./Beginner/basic-dockerfile/) -> Build a basic Dockerfile to create a Docker image.
 - [x] [GitHub Pages Deployment](./Beginner/gh-deployment-workflow/) -> Write a simple GitHub Actions workflow to deploy a static website to GitHub Pages.
 - [x] [Nginx Log Analyser](./Beginner/nginx-log-analyser/) -> Write a simple tool to analyze logs from the command line.
-- [x] [SSH Remote Server Setup](./Beginner/ssh-remote-server-setup/) -> Setup a basic remote linux server and configure it to allow SSH
-- [x] [Static Site Server](./Beginner/static-site-server/) -> Setup a basic linux server and configure it to serve a static site
-- [x] [Basic DNS Setup](./Beginner/basic-dns-setup/) -> Purchase a custom domain and set up basic DNS records
+- [x] [SSH Remote Server Setup](./Beginner/ssh-remote-server-setup/) -> Setup a basic remote linux server and configure it to allow SSH.
+- [x] [Static Site Server](./Beginner/static-site-server/) -> Setup a basic linux server and configure it to serve a static site.
+- [x] [Basic DNS Setup](./Beginner/basic-dns-setup/) -> Purchase a custom domain and set up basic DNS records.
+- [x] [Simple Monitoring Dashboard](./Beginner/simple-monitoring-dashboard/) -> Set up a basic monitoring dashboard using Netdata.
