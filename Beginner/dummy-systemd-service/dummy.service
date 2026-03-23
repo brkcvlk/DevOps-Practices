@@ -1,0 +1,11 @@
+[Unit]
+Description=Dummy Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/dummy.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

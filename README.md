@@ -15,3 +15,4 @@ Projects from the [roadmap.sh DevOps learning path](https://roadmap.sh/devops/pr
 - [x] [Static Site Server](./Beginner/static-site-server/) -> Setup a basic linux server and configure it to serve a static site.
 - [x] [Basic DNS Setup](./Beginner/basic-dns-setup/) -> Purchase a custom domain and set up basic DNS records.
 - [x] [Simple Monitoring Dashboard](./Beginner/simple-monitoring-dashboard/) -> Set up a basic monitoring dashboard using Netdata.
+- [x] [Dummy Systemd Service](./Beginner/dummy-systemd-service/) -> Create a long-running systemd service that logs to a file.
