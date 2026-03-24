@@ -21,7 +21,7 @@ Projects from the [roadmap.sh DevOps learning path](https://roadmap.sh/devops/pr
 ### Intermediate
 
 - [ ] [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer)
-- [ ] [Configuration Management](https://roadmap.sh/projects/configuration-management)
+- [x] [Configuration Management](./Intermediate/configuration-management/) -> Write an Ansible playbook to configure a Linux server.
 - [ ] [IaC on DigitalOcean](https://roadmap.sh/projects/iac-digitalocean)
 - [ ] [Node.js Service Deployment](https://roadmap.sh/projects/nodejs-service-deployment)
 - [ ] [Dockerized Service](https://roadmap.sh/projects/dockerized-service-deployment)

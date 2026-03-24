@@ -1,0 +1,2 @@
+ssh_public_key: "ssh-ed25519 AAAA..."
+app_tarball: "./app.tar.gz"

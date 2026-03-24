@@ -1,0 +1,23 @@
+- name: Update all packages
+  ansible.builtin.dnf:
+    name: "*"
+    state: latest
+
+- name: Install utilities
+  ansible.builtin.dnf:
+    name:
+      - wget
+      - git
+      - unzip
+    state: present
+
+- name: Install fail2ban
+  ansible.builtin.dnf:
+    name: fail2ban
+    state: present
+
+- name: Start and enable fail2ban
+  ansible.builtin.systemd:
+    name: fail2ban
+    state: started
+    enabled: true
