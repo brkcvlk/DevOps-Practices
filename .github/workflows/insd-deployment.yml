@@ -37,5 +37,5 @@ jobs:
           EOF
 
       - name: Run Ansible playbook
-        working_directory: Intermediate/nodejs-service-deployment/ansible
+        working-directory: Intermediate/nodejs-service-deployment/ansible
         run: ansible-playbook node_service.yml --tags app
