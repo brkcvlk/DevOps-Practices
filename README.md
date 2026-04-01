@@ -23,7 +23,7 @@ Projects from the [roadmap.sh DevOps learning path](https://roadmap.sh/devops/pr
 - [ ] [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer)
 - [x] [Configuration Management](./Intermediate/configuration-management/) -> Write an Ansible playbook to configure a Linux server.
 - [x] [IaC on DigitalOcean](./Intermediate/iac-digitalocean/) -> Write Terraform code to create a Droplet on DigitalOcean (used AWS instead of DigitalOcean)
-- [ ] [Node.js Service Deployment](https://roadmap.sh/projects/nodejs-service-deployment)
+- [x] [Node.js Service Deployment](./Intermediate/nodejs-service-deployment/) -> Use GitHub Actions to Deploy a Node.js Service to a remote server (used Python/FastAPI instead of Nodejs)
 - [ ] [Dockerized Service](https://roadmap.sh/projects/dockerized-service-deployment)
 - [ ] [Multi-Container Application](https://roadmap.sh/projects/multi-container-service)
 - [ ] [Automated DB Backups](https://roadmap.sh/projects/automated-backups)
