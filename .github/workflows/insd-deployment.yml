@@ -1,0 +1,41 @@
+name: Deploy INSD FastAPI Service
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Intermediate/nodejs-service-deployment/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Ansible
+        run: pip install ansible
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.INSD_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Create inventory file
+        run: |
+          cat > Intermediate/nodejs-service-deployment/ansible/inventory.ini << EOF
+          [web]
+          ec2-instance ansible_host=${{ secrets.INSD_HOST }} ansible_user=ec2-user ansible_ssh_private_key_file=~/.ssh/deploy_key
+          EOF
+
+      - name: Run Ansible playbook
+        working_directory: Intermediate/nodejs-service-deployment/ansible
+        run: ansible-playbook node_service.yml --tags app
