@@ -1,5 +1,5 @@
 # Dockerized Service Deployment
-Use GitHub Actions to Deploy a Python/FastAPI Service to a remote server using Docker
+Use GitHub Actions to Deploy a Dockerized Python/FastAPI Service
 
 ## Prerequisites
 - [Docker](https://docs.docker.com/get-docker/)
