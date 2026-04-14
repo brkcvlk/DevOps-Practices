@@ -13,6 +13,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/my-key
 ```
 
 ## Configuration
+
 Copy `.env.example` to `.env` and fill in the values:
 ```bash
 cp .env.example .env
