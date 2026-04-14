@@ -1,0 +1,48 @@
+name: Deploy IDSD FastAPI Service
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Intermediate/dockerized-service-deployment/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.IDSD_DOCKER_USERNAME }}
+          password: ${{ secrets.IDSD_DOCKER_PASSWORD }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./Intermediate/dockerized-service-deployment
+          push: true
+          tags: ${{ secrets.IDSD_DOCKER_USERNAME }}/fastapi-service:latest
+
+      - name: Deploy to remote server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.IDSD_HOST }}
+          username: ${{ secrets.IDSD_USER }}
+          key: ${{ secrets.IDSD_SSH_KEY }}
+          script: |
+            docker pull ${{ secrets.IDSD_DOCKER_USERNAME }}/fastapi-service:latest
+            docker stop fastapi-service || true
+            docker rm fastapi-service || true
+            docker run -d \
+              --name fastapi-service \
+              --restart always \
+              -p 8000:8000 \
+              -e SECRET_MESSAGE="${{ secrets.IDSD_SECRET_MESSAGE }}" \
+              -e APP_USERNAME="${{ secrets.IDSD_APP_USERNAME }}" \
+              -e APP_PASSWORD="${{ secrets.IDSD_APP_PASSWORD }}" \
+              ${{ secrets.IDSD_DOCKER_USERNAME }}/fastapi-service:latest
