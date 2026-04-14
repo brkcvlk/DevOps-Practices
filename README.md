@@ -24,7 +24,7 @@ Projects from the [roadmap.sh DevOps learning path](https://roadmap.sh/devops/pr
 - [x] [Configuration Management](./Intermediate/configuration-management/) -> Write an Ansible playbook to configure a Linux server.
 - [x] [IaC on DigitalOcean](./Intermediate/iac-digitalocean/) -> Write Terraform code to create a Droplet on DigitalOcean (used AWS instead of DigitalOcean)
 - [x] [Node.js Service Deployment](./Intermediate/nodejs-service-deployment/) -> Use GitHub Actions to Deploy a Node.js Service to a remote server (used Python/FastAPI instead of Nodejs)
-- [x] [Dockerized Service](https://roadmap.sh/projects/dockerized-service-deployment) -> Use GitHub Actions to Deploy a Dockerized Node.js Service(used Python/FastAPI instead of Nodejs)
+- [x] [Dockerized Service](./Intermediate/dockerized-service-deployment) -> Use GitHub Actions to Deploy a Dockerized Node.js Service(used Python/FastAPI instead of Nodejs)
 - [ ] [Multi-Container Application](https://roadmap.sh/projects/multi-container-service)
 - [ ] [Automated DB Backups](https://roadmap.sh/projects/automated-backups)
 - [ ] [Bastion Host](https://roadmap.sh/projects/bastion-host)
